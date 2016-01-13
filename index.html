@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Building Python Data Applications with Blaze and Bokeh</title>
+		<title>Building Python Data Applications with Bokeh and Blaze</title>
 
-		<meta name="description" content="SciPy 2015. Building Python Data Applications with Blaze and Bokeh Tutorial">
-		<meta name="author" content="Christine Doig">
+		<meta name="description" content="Building Python Data Applications with Bokeh and Blaze Tutorial">
+		<meta name="author" content="Ian Stokes-Rees">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -41,10 +41,11 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<div class="circular" style="background: url(images/ChristineDoig.png) no-repeat; background-position: center; margin-left:40%;"></div	>
-					<h1 style="text-align:center">Building Python Data Applications: <br>with Blaze and Bokeh</h1>
-					<h3 style="text-align:center">SciPy 2015</h3>
-					<h6 style='text-align:right'>by Christine Doig</h6>
+					<!-- div class="circular" style="background: url(images/anaconda_logo.png) no-repeat; background-position: center; margin-left:40%;"></div-->
+					<center> <img src='images/anaconda_logo.png' width=600 /> </center>
+					<h1 style="text-align:center">Building Python Data Applications: <br>with Bokeh and Blaze</h1>
+					<h3 style="text-align:center">January 2016</h3>
+					<h6 style='text-align:right'>by Ian Stokes-Rees</h6>
 				</section>
 
 				<section>
@@ -55,21 +56,23 @@
                     <section>
                         <h3 style="text-align:center">About me</h3>
                          <div style="font-size:30px;">
-                        <li>From Barcelona. Living in Austin, TX</li>
-                        <li>Data Scientist at Continuum Analytics</li>
-                        <li>Started M.S. in Data Mining and Business Intelligence, UPC-BCN</li> 
-                        <li>Previously, Process Engineer and Business Analyst</li>
-                        <li>Master Thesis on Voltage Stability at RWTH Aachen, Germany<br>E.ON Energy Research Center</li>
-                        <li>M.S. Industrial Engineering / Automation & Control, UPC-BCN</li></div>
-                        <p><a href="http://chdoig.github.com">http://chdoig.github.com</a></p>
+                        <li>Engineer at Continuum Analytics</li>
+                        <li>Previously Lecturer at Harvard School of Engineering</li>
+                        <li>Postdoc in Sliz Lab at Harvard Medical School
+                            <ul><li>computational structural biology</li></ul>
+                        </li>
+                        <li>PhD at Oxford
+                            <ul><li>developed computing infrastructure for CERN LHCb experiment</li></ul>
+                        </li>
+                        <p><a href="http://about.me/ijstokes">http://about.me/ijstokes</a></p>
                     </section>
 
-                    <!--section>
+                    <section>
                         <h3 style="text-align:center">About you</h3>
                         <h3>Exercise 0 - Icebreaker</h3>
                         <p>Introduce yourself to 2-3 people sitting near you</p>
                         <h6 style='text-align:right'>5 min</h6>
-                    </section-->
+                    </section>
 
                     <section>
                         <h3 style="text-align:center">About the tutorial</h3>
@@ -124,19 +127,19 @@ $ conda update anaconda
 
                         <pre><code class="prettyprint prettyprinted bash">
 $ conda env create
-$ source activate scipy-tutorial
+$ source activate bokehblazetutorial
                         </code></pre>
                     </section>
 
                     <section>
                         <h3 style="text-align:center">Setup reminder (II)</h3>
                         <pre><code class="prettyprint prettyprinted bash">
-$ git clone https://github.com/chdoig/scipy2015-blaze-bokeh.git
-$ cd scipy2015-blaze-bokeh
-$ ipython notebook
+$ git clone https://github.com/ijstokes/bokeh-blaze-tutorial.git
+$ cd bokeh-blaze-tutorial
+$ jupyter notebook
                         </code></pre>
                         <br>
-                        <p style="text-align:center">Bokeh version: 0.9.0</p>
+                        <p style="text-align:center">Bokeh version: 0.11.0</p>
                         <p style="text-align:center">Blaze version: 0.8.0</p>
                     </section>
                     <section>
@@ -147,7 +150,7 @@ $ ipython notebook
                         <!--p><a href="http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc">http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc</a></p-->
                         <li>Baseball App: Lahman dataset</li>
                         <p style="font-size:30px"><a href="https://s3.amazonaws.com/scipy-blaze-bokeh/lahman2013.sqlite">https://s3.amazonaws.com/scipy-blaze-bokeh/lahman2013.sqlite</a></p>
-                        <p><b>Move those datasets to the folder:</b> <br>~/scipy2015-blaze-bokeh/data</p>
+                        <p><b>Move those datasets to the folder:</b> <br>~/bokeh-blaze-tutorial/data</p>
                     </section>
                     <section>
                         <h3 style="text-align:center">Slides</h3>
@@ -662,7 +665,7 @@ $ ipython notebook
                     </section>
                     <section>
                         <h3 style="text-align:center">Exercises</h3>
-                        <p>Create a Baseball application (Lahman dataset) with Blaze and Bokeh</p>
+                        <p>Create a Baseball application (Lahman dataset) with Bokeh and Blaze</p>
                     </section>
                 </section>
 
@@ -670,7 +673,7 @@ $ ipython notebook
 					<h2>Questions?</h2>
 					<p>Slides: <br><a href="http://chdoig.github.com/scipy2015-blaze-bokeh">http://chdoig.github.com/scipy2015-blaze-bokeh</a></p>
 					<p>Email: <a>christine.doig@continuum.io</a></p>
-					<p>Twitter: <a href="http://twitter.com/ch_doig">ch_doig</a></p>
+					<p>Twitter: <a href="http://twitter.com/ijstokes">ijstokes</a></p>
 				</section>
 			</div>
 
@@ -680,8 +683,8 @@ $ ipython notebook
 					<img src="images/continuum_analytics_b&w.png">
 				</div>
 			<div style="text-align:right; float:right; margin-right:5%; margin-top:1%">
-				<p style=" font-size:24px; height:36px"><img style="vertical-align:middle" class="social-icon" src="images/twitter-icon.png"><a href="https://twitter.com/ch_doig"> ch_doig</a>
-		        <img style="vertical-align:middle" class="social-icon" src="images/github-icon.png"><a href="https://github.com/chdoig"> chdoig </a></p>
+				<p style=" font-size:24px; height:36px"><img style="vertical-align:middle" class="social-icon" src="images/twitter-icon.png"><a href="https://twitter.com/ijstokes">ijstokes</a>
+		        <img style="vertical-align:middle" class="social-icon" src="images/github-icon.png"><a href="https://github.com/ijstokes"> ijstokes </a></p>
 	        </div>
         </div>
 
