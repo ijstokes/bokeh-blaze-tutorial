@@ -1,8 +1,26 @@
-name: scipy-tutorial
+name: bokehblazetutorial
 dependencies:
-  - blaze=0.8.0
-  - bokeh=0.9.0
-  - ipython=3.2.0
-  - ipython-notebook
+  - python=3.5
+  - blaze=0.9.0
+  - bokeh=0.11.0
+  - dask=0.7.6
+  - odo=0.4.0
+  - jupyter
+  - notebook
   - netcdf4
   - boto
+  - pexpect
+  - pyflakes
+  - pytables
+  - bcolz
+  - scikit-image
+  - scikit-learn
+  - sympy
+  - xlrd
+  - xlwt
+  - xlwings
+  - sqlalchemy
+  - holoviews
+  - networkx
+  - seaborn
+  - statsmodels
