@@ -1,5 +1,5 @@
-Building Python Applications with Blaze and Bokeh Tutorial, Christine Doig
+Building Python Applications with Blaze and Bokeh Tutorial, Ian Stokes-Rees
 
-Scipy 2015
+January 2015
 
-Slides: http://chdoig.github.com/scipy2015-blaze-bokeh
+Slides: http://ijstokes.github.com/bokeh-blaze-tutorial
